@@ -2,25 +2,24 @@ export const Footer = ({ ...props }) => {
 	return (
 		<div className="footer">
 			<p className="footer-hackathon-text ">
-				Made for{" "}
+				Credits :{" "}
 				<span style={{ color: "white" }}>
 					<a
 						style={{ color: "white" }}
 						target="_blank"
-						href="https://www.linode.com/?utm_source=hashnode&utm_medium=article&utm_campaign=hackathon_announcement"
+						href="https://www.oracle.com/in/cloud/"
 					>
-						linode
+						Oracle Cloud
 					</a>{" "}
 					x{" "}
 					<a
 						style={{ color: "white" }}
 						target="_blank"
-						href="https://hashnode.com/"
+						href="https://developerweek-2023-hackathon.devpost.com/"
 					>
-						hashnode
+						Developer Week Hackathon
 					</a>
-				</span>{" "}
-				hackathon
+				</span>
 			</p>
 		</div>
 	);

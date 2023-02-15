@@ -6,7 +6,7 @@ export const HeroSection = ({ ...props }) => {
 		<div className="hero-content">
 			<div className="hero-title-text-and-description">
 				<div className="hero-title">
-					Curate your links <br /> the{" "}
+					Shelf your links at one place <br /> the{" "}
 					<span className="u-text-mark">smart</span> way
 				</div>
 				<div className="hero-description">
@@ -14,7 +14,7 @@ export const HeroSection = ({ ...props }) => {
 					synced on all your devices. Also when you make it public you can share
 					those collections with anyone. The app enables productivity of both
 					you and the one who is getting help by your publicly available curated
-					collection,
+					collection at ont place.
 				</div>
 			</div>
 			<div className="hero-ctas">
@@ -25,7 +25,7 @@ export const HeroSection = ({ ...props }) => {
 							navigate("/auth");
 						}}
 					>
-						get started
+						Let's get started
 					</div>
 				</div>
 			</div>

@@ -20,7 +20,7 @@ export const LandingPage = () => {
 				cookies.userData != undefined &&
 				cookies.userData.user !== undefined
 			) {
-				navigate("/home", { replace: true });
+				navigate("/", { replace: true });
 			}
 		}
 		getData();
