@@ -20,7 +20,7 @@ export const LandingPage = () => {
 				cookies.userData != undefined &&
 				cookies.userData.user !== undefined
 			) {
-				navigate("/", { replace: true });
+				navigate("/home", { replace: true });
 			}
 		}
 		getData();
@@ -31,8 +31,7 @@ export const LandingPage = () => {
 			<Navbar />
 			<HeroSection />
 			<EasyAndBeautifulSection />
-			<WhySection image={DMImage} imageWidth={"30%"}>
-				<span>
+			<div className="desc-title">
 					<span>
 						Most of the ones who can guide beginners are busy hustling. they
 						barely have time to do so. There has to be some product that enables
@@ -47,14 +46,13 @@ export const LandingPage = () => {
 						that they saved while learning the tech stack. Which would help the
 						curators build personal brand and learners save time.
 					</span>
-				</span>
-			</WhySection>
-
+			</div>
+{/* 
 			<WhySection image={ComparisionImage} imageWidth={"50%"}>
 				Also the current experience of bookmarking links for future refrences is
 				either too ugly (using brower’s bookmarks) or too time taking (notion
 				etc.) We enable you to store it beautifully that also in minimest time
-			</WhySection>
+			</WhySection> */}
 			<Footer></Footer>
 		</div>
 	);

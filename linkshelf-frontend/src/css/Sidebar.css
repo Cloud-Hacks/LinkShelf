@@ -180,6 +180,15 @@
 	position: relative;
 }
 
+.gobackbutton {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	flex-shrink: 0;
+	margin-left: 5%;
+	margin-top: 7%;
+}
+
 .icon6 {
 	width: 1.302vw;
 	height: 2.618vh;

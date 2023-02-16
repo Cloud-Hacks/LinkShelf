@@ -108,6 +108,14 @@ body {
 	align-self: stretch;
 }
 
+.desc-title {
+	color: #ffffff;
+	text-align: center;
+	font: 400 34.15px "Plus Jakarta Sans";
+	position: block;
+	margin-bottom: 3%;
+}
+
 .u-text-mark {
 	position: relative;
 	z-index: 1;

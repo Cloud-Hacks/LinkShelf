@@ -26,7 +26,7 @@ const Sidebar = ({ select }) => {
 			.then((res) => res.data)
 			.then((data) => {
 				removeCookie("userData");
-				navigate("/auth", { replace: true });
+				navigate("/", { replace: true });
 				handleCloseYesNoDialog();
 			})
 			.catch((err) => {
