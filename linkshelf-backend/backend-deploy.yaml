@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: linkshelf-server-app-deploy
+spec:
+  replicas: 3
+  containers:
+    - image: afzal442/linkshelf-bd:v1
+      name: mybd
+      ports:
+      - containerPort: 8000
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: MU
+          valueFrom:
+            secretKeyRef:
+              name: mongo-secret
+              key: mongo-user
+        - name: MPW
+          valueFrom:
+            secretKeyRef:
+              name: mongo-secret
+              key: mongo-password
+        - name: MYSECRET
+          valueFrom:
+            secretKeyRef:
+              name: mongo-secret
+              key: my-secret

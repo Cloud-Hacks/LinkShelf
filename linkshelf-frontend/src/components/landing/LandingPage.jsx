@@ -42,9 +42,9 @@ export const LandingPage = () => {
 					<span className="why-text-span">productive</span>
 					<span>
 						{" "}
-						at the same time. With qrate they can share the links to resources
-						that they saved while learning the tech stack. Which would help the
-						curators build personal brand and learners save time.
+						at the same time. With linkshelf they can store the links to resources
+						that they saved while learning the tech stack which would help 
+						build themselves personal brand and save time.
 					</span>
 			</div>
 {/* 

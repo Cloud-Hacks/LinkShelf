@@ -12,7 +12,7 @@ const authRoutes = require("./routes/auth");
 const rescollectionRoutes = require("./routes/rescollection");
 
 mongoose
-	.connect(process.env.ORACLE_DATABASE_HOST, {
+	.connect('mongodb://' + process.env.MU + ':' + process.env.MPW + '@G0DF66ACB27C3BC-L93DGI0OCNLPZ4ON.adb.ap-mumbai-1.oraclecloudapps.com:27016/memp?authMechanism=PLAIN&authSource=$external&ssl=true&retryWrites=false', {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 		useCreateIndex: true,

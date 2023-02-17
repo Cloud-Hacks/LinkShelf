@@ -21,7 +21,7 @@ exports.signup = (req, res) => {
 		}
 
 		//create token
-		const token = jwt.sign({ _id: user._id }, process.env.SECRET);
+		const token = jwt.sign({ _id: user._id }, process.env.MYSECRET);
 
 		//send response to front end
 		const { _id, name, email, role } = user;
@@ -53,7 +53,7 @@ exports.signin = (req, res) => {
 		}
 
 		//create token
-		const token = jwt.sign({ _id: user._id }, process.env.SECRET);
+		const token = jwt.sign({ _id: user._id }, process.env.MYSECRET);
 
 		//send response to front end
 		const { _id, name, email, role } = user;
@@ -70,7 +70,7 @@ exports.signout = (req, res) => {
 
 //protected-routes
 exports.isSignedIn = expressJwt({
-	secret: process.env.SECRET,
+	secret: process.env.MYSECRET,
 	algorithms: ["HS256"],
 	userProperty: "auth",
 });
