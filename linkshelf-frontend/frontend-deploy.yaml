@@ -15,11 +15,10 @@ spec:
     spec:
       containers:
         - name: application-frontend
-          image: afzal442/linfshelf-ft:v1
+          image: afzal442/linkshelf-ft:v1
           # imagePullPolicy: Never
           ports:
           - containerPort: 3000
-            targetPort: 80
 ---
 # Client Service
 apiVersion: v1

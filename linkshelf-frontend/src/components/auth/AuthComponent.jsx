@@ -113,7 +113,7 @@ const AuthComponent = ({ auth }) => {
             else auth(name, email, password, isSignIn);
           }}
         >
-          <div class="auth-action-text">{isSignIn ? "Sign up" : "Sign in"}</div>
+          <div class="auth-action-text">{isSignIn ? "Sign in" : "Sign up"}</div>
         </div>
       </div>
     </div>
